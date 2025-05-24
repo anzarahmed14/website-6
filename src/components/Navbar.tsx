@@ -21,9 +21,9 @@ return (
             <li className='p-4'>Contact</li>
         </ul>
         <div onClick={handleNav} className='block md:hidden'>
-            {!nav ? <AiOutlineClose /> : <AiOutlineMenu />}
+            {nav ? <AiOutlineClose /> : <AiOutlineMenu />}
         </div>
-        <div className={!nav ? 'fixed left-0 top-3 w-[60%] border-r-gray-900 bg-[#000300] ease-in-out duration-500' : ' fixed left-[-100%]  duration-500'}>
+        <div className={nav ? 'fixed left-0 top-3 w-[60%] border-r-gray-900 bg-[#000300] ease-in-out duration-500' : ' fixed left-[-100%] duration-500'}>
             <h1 className='w-full text-3xl font-bold text-[#00df9a]'>React.</h1>
             <ul className=' uppercase p-4'>
                 <li className='p-4 border-gray-600'>Home</li>

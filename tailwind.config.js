@@ -6,6 +6,9 @@ export default {
   ],  
   theme: {
     extend: {
+      maxWidth : {
+        "container" : "1240px"
+      },
       colors: {
         primary: '#1E40AF',   // blue-800
         secondary: '#F59E0B', // amber-500
